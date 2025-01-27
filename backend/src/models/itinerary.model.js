@@ -40,11 +40,11 @@ const destinationSchema = new Schema({
     },
     startTime: {
         type: String,
-        required: false 
+        required: false
     },
     endTime: {
         type: String,
-        required: false 
+        required: false
     },
     banner: {
         type: String,
@@ -79,7 +79,7 @@ const hotelSchema = new Schema({
         default: 0,
         min: 0
     },
-    
+
 }, { _id: false });
 
 const permissionSchema = new Schema({
@@ -144,4 +144,4 @@ const itinerarySchema = new Schema({
     timestamps: true // Automatically handles `createdAt` and `updatedAt`
 });
 
-export default Itinerary =  mongoose.model("Itinerary", itinerarySchema);
+export const Itinerary = mongoose.model("Itinerary", itinerarySchema);
